@@ -1,0 +1,31 @@
+
+<div class="grid-container">
+<ng-container *ngFor="let pokemon of pokemons">
+    <div class="bg py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 offset-sm-2">
+            <div class="grid-container">
+              <div class="col" style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+              border: 1px solid #ccc; 
+              padding: 20px;">
+                <div class="mt-2">
+                  <h1>{{pokemon.name | titlecase}}</h1>
+                </div>
+                <ul class="list-group list-group-flush mt-4" style="width: 20rem;">
+                  <li class="list-group-item bg-transparent">EXP <b class="float-end">{{pokemon.exp}}</b></li>
+                  <li class="list-group-item bg-transparent">Height <b class="float-end">{{pokemon.height}}</b></li>
+                  <li class="list-group-item bg-transparent">Weight <b class="float-end">{{pokemon.weight}}</b></li>
+                  <li class="list-group-item bg-transparent">Hp <b class="float-end">{{pokemon.hp}}</b></li>
+                  <li class="list-group-item bg-transparent">ATK <b class="float-end">{{pokemon.atk}}</b></li>
+                  <li class="list-group-item bg-transparent">DEF <b class="float-end">{{pokemon.def}}</b></li>
+                  <li class="list-group-item bg-transparent">Speed <b class="float-end">{{pokemon.spd}}</b></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  </div>

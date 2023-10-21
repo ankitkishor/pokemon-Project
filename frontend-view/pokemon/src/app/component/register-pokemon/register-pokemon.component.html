@@ -1,0 +1,69 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Add a New Pokémon</h3>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="pokemonForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" formControlName="name">
+            </div>
+
+            <div class="form-group">
+              <label for="types">Type</label>
+              <select class="form-select" id="types" formControlName="types">
+                <option value="Normal">Normal</option>
+                <option value="Ice">Ice</option>
+                <option value="Fire">Fire</option>
+                <option value="Water">Water</option>
+                <option value="Grass">Grass</option>
+                <option value="Bug">Bug</option>
+                <option value="Ground">Ground</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="height">Height</label>
+              <input type="text" class="form-control" id="height" formControlName="height">
+            </div>
+
+            <div class="form-group">
+              <label for="weight">Weight</label>
+              <input type="text" class="form-control" id="weight" formControlName="weight">
+            </div>
+
+            <div class="form-group">
+              <label for="hp">HP</label>
+              <input type="text" class="form-control" id="hp" formControlName="hp">
+            </div>
+
+            <div class="form-group">
+              <label for="attack">Attack</label>
+              <input type="text" class="form-control" id="atk" formControlName="atk">
+            </div>
+
+            <div class="form-group">
+              <label for="defense">Defense</label>
+              <input type="text" class="form-control" id="def" formControlName="def">
+            </div>
+
+            <div class="form-group">
+              <label for="speed">Speed</label>
+              <input type="text" class="form-control" id="spd" formControlName="spd">
+            </div>
+
+            <div class="form-group">
+              <label for="experience">Experience</label>
+              <input type="text" class="form-control" id="exp" formControlName="exp">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
