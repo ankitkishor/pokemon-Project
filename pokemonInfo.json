@@ -1,0 +1,59 @@
+[{
+  "_id": "Pikachu",
+  "types": "Electric",
+  "height": 40,
+  "weight": 6,
+  "hp": 35,
+  "atk": 55,
+  "def": 40,
+  "spd": 90,
+  "exp": 112,
+  "_class": "com.pokemon.entity.PokemonInfo"
+},{
+  "_id": "Bulbasaur",
+  "types": "Grass, Poison",
+  "height": 70,
+  "weight": 69,
+  "hp": 45,
+  "atk": 49,
+  "def": 49,
+  "spd": 45,
+  "exp": 64,
+  "_class": "com.pokemon.entity.PokemonInfo"
+},{
+  "_id": "Charizard",
+  "types": "Fire, Flying",
+  "height": 170,
+  "weight": 90,
+  "hp": 78,
+  "atk": 84,
+  "def": 78,
+  "spd": 100,
+  "exp": 240,
+  "_class": "com.pokemon.entity.PokemonInfo"
+},{
+  "_id": "goblin",
+  "types": "Normal",
+  "height": 44,
+  "weight": 20,
+  "hp": 54,
+  "_class": "com.pokemon.entity.PokemonInfo"
+},{
+  "_id": "dragon",
+  "types": "Fire",
+  "height": 44,
+  "weight": 20,
+  "hp": 54,
+  "_class": "com.pokemon.entity.PokemonInfo"
+},{
+  "_id": "slayer",
+  "types": "Bug",
+  "height": 33,
+  "weight": 44,
+  "hp": 66,
+  "atk": 12,
+  "def": 44,
+  "spd": 66,
+  "exp": 24,
+  "_class": "com.pokemon.entity.PokemonInfo"
+}]

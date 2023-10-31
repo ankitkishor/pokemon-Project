@@ -16,7 +16,7 @@
                 *ngFor="let pokemon of pokemons | paginate: { itemsPerPage: 10 ,currentPage: page, totalItems: totalPokemons} " >
                     <div class="card mb-3 bg-{{getType(pokemon)}}" >
                         <div class="card-body">
-                            <div class="row" [routerLink]="['/pokemon', pokemon.name]">
+                            <div class="row" >
                                 <div class="col-7 col-sm-8">
                                     <h3 class="card-title">{{pokemon.name | titlecase}}</h3>
                                     <span *ngFor="let type of pokemon.types"
@@ -28,6 +28,9 @@
                                     <img [src]="pokemon.sprites.front_default"
                                         class="img-fluid" alt="Pokemon">
                                 </div>
+                                <div  [routerLink]="['/pokemon', pokemon.name]">
+                                    <button  class="black border rounded-pill ">read more</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -35,6 +38,14 @@
             </div>
         </div>
     </div>
+    <div>
+        <button *ngIf="hasMorePages()" class="load-more" (click)="loadMore()">Load More</button>
+    </div>
 </div>
 
-<pagination-controls (pageChange)="pageChange($event)"></pagination-controls>
+<!-- <pagination-controls (pageChange)="pageChange($event)"></pagination-controls> -->
+<!-- <pagination-controls 
+  (pageChange)="pageChange($event)" 
+  previousLabel="" 
+  nextLabel=""
+></pagination-controls> -->

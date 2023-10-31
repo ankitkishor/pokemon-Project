@@ -14,13 +14,9 @@ export class DashboardListComponent implements OnInit {
   page:number=1;
   constructor(private pokemonService:PokemonserviceService,private route:Router,private activate:ActivatedRoute){}
   ngOnInit(): void {
-
-    
-    this.getPokemons();
-        
-      
-    
+    this.getPokemons();  
   }
+  
 
   getType(pokemon: any): string {
     return this.pokemonService.getType(pokemon);
@@ -40,8 +36,17 @@ export class DashboardListComponent implements OnInit {
         });
       });
   }
-  pageChange(newPage: number) {
-    this.page = newPage;
+  // pageChange(newPage: number) {
+  //   this.page = newPage;
+  //   this.getPokemons();
+  // }
+  
+  hasMorePages(): boolean {
+    return this.page * 10 < this.totalPokemons;
+  }
+
+  loadMore() {
+    this.page++;
     this.getPokemons();
   }
   

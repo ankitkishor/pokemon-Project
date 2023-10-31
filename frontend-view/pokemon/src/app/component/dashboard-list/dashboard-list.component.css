@@ -41,4 +41,21 @@
     text-align: center;
   }
   
-  
+
+button.load-more {
+  background-color: red; 
+  color: #fff; 
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: center;
+}
+
+
+button.load-more:hover {
+  background-color: greenyellow; }
+
+button.load-more {
+  margin-top: 20px;
+}
